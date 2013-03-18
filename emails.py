@@ -10,7 +10,6 @@ from dateutil import *
 from model import *
 
 REMINDER = """
-
 Good Work. Thank you.
 Please enter your task by reply. :)
 
