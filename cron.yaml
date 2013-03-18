@@ -1,7 +1,7 @@
 cron:
 - description: weekly reminder
   url: /reminderemail
-  schedule: every friday 15:00 # FIX ME
+  schedule: every monday 15:00 # FIX ME
   timezone: Asia/Seoul
 - description: weekly digest
   url: /digestemail
