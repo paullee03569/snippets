@@ -31,7 +31,7 @@ class ReminderEmail(webapp.RequestHandler):
 
 class OneReminderEmail(webapp.RequestHandler):
     def post(self):
-        mail.send_mail(sender="snippets <snippets@minisnippets.appspotmail.com>", # FIX ME
+        mail.send_mail(sender="snippets <snippets@dcubesnippets.appspotmail.com>", # FIX ME
                        to=self.request.get('email'),
                        subject="Snippet 타임!",
                        body=REMINDER)
@@ -48,7 +48,7 @@ class DigestEmail(webapp.RequestHandler):
 
 class OneDigestEmail(webapp.RequestHandler):
     def __send_mail(self, recipient, body):
-        mail.send_mail(sender="snippets <snippets@minisnippets.appspotmail.com>", # FIX ME
+        mail.send_mail(sender="snippets <snippets@dcubesnippets.appspotmail.com>", # FIX ME
                        to=recipient,
                        subject="Snippet Digest 메일이 도착하였습니다!",
                        body=body)
@@ -69,6 +69,6 @@ class OneDigestEmail(webapp.RequestHandler):
         logging.info(all_snippets)
         body = '\n\n\n'.join([self.__snippet_to_text(s) for s in all_snippets if s.user.email in following])
         if body:
-            self.__send_mail(user.email, 'https://minisnippets.appspot.com\n\n' + body) # FIX ME
+            self.__send_mail(user.email, 'https://dcubesnippets.appspot.com\n\n' + body) # FIX ME
         else:
             logging.info(user.email + ' not following anybody.')
