@@ -9,14 +9,15 @@ from google.appengine.ext.webapp import util
 from dateutil import *
 from model import *
 
-REMINDER = """
-한 주간 수고하셨습니다.
-회신으로 업무내역을 입력해주세요. :)
+REMINDER = ""
 
-지난주 한 일
+Thank you for your effort.
+Please enter your task by reply. :)
+
+Complete task this week
 - 
 
-이번주 할 일
+Next week task
 - 
 """
 
