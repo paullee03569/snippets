@@ -11,7 +11,7 @@ from model import *
 
 REMINDER = ""
 
-Thank you for your effort.
+Good Work!!! Thank you.
 Please enter your task by reply. :)
 
 Complete task this week
