@@ -9,15 +9,15 @@ from google.appengine.ext.webapp import util
 from dateutil import *
 from model import *
 
-REMINDER = ""
+REMINDER = """
 
 Good Work. Thank you.
 Please enter your task by reply. :)
 
-Complete task this week
+Complete Task This Week
 - 
 
-Next week task
+Next Week To Do List
 - 
 """
 
